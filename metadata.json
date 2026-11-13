@@ -1,0 +1,6 @@
+{
+  "name": "ChatFlow",
+  "description": "Real-time messaging and voice calling app",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

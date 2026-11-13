@@ -1,0 +1,52 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "userId": "string",
+        "displayName": "string",
+        "email": "string",
+        "phoneNumber": "string",
+        "about": "string",
+        "photoUrl": "string",
+        "online": "boolean",
+        "lastSeen": "timestamp",
+        "createdAt": "timestamp"
+      }
+    },
+    "Chat": {
+      "path": "chats/{chatId}",
+      "fields": {
+        "chatId": "string",
+        "participantIds": "array",
+        "lastMessage": "string",
+        "lastMessageTime": "timestamp",
+        "createdAt": "timestamp"
+      }
+    },
+    "Message": {
+      "path": "chats/{chatId}/messages/{messageId}",
+      "fields": {
+        "messageId": "string",
+        "senderId": "string",
+        "text": "string",
+        "timestamp": "timestamp",
+        "status": "string",
+        "iv": "string",
+        "encrypted": "boolean"
+      }
+    },
+    "Call": {
+      "path": "calls/{callId}",
+      "fields": {
+        "callId": "string",
+        "callerId": "string",
+        "receiverId": "string",
+        "status": "string",
+        "timestamp": "timestamp",
+        "offer": "string",
+        "answer": "string"
+      }
+    }
+  }
+}
